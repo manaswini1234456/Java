@@ -24,6 +24,7 @@ class Node
         n2.next=n3;
         n3.next=n4;
         display(n1);
+       display(insertAtStart(n1,9));
         
     }
     
@@ -36,5 +37,14 @@ class Node
         }
         System.out.println();
     }
+     public static Node insertAtStart(Node head,int x){
+        
+      
+        Node newNode=new Node(x);
+        newNode.next=head;
+        return newNode;
+       
+    }
+
 }
         
