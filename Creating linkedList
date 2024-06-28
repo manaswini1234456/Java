@@ -1,0 +1,40 @@
+#creating linkedlist using nodes
+
+#node class
+class Node 
+{
+    
+    int data;
+    Node next;;
+     public Node(int data){
+        this.data=data;
+        this.next=null;
+         
+     }
+
+        
+    public static void main(String[] args) {
+        #creating node objects
+        Node n1=new Node(2);
+        Node n2=new Node(7);
+        Node n3=new Node(7);
+        Node n4=new Node(7);
+#linking noides
+        n1.next=n2;
+        n2.next=n3;
+        n3.next=n4;
+        display(n1);
+        
+    }
+    
+    public static void display(Node n1){
+        Node head=n1;
+        Node temp=head;
+        while(temp!=null){
+            System.out.println(temp.data+"");
+            temp=temp.next;
+        }
+        System.out.println();
+    }
+}
+        
